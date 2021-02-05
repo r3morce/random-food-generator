@@ -40,7 +40,7 @@ with open(csv_file_name, 'r') as csvfile:
         chance = ((ranking.max-ranking.min)/max_ranking)*100
         print("\t{:2.2f}%\tfor {}".format(chance, ranking.food))
 
-    input("\nPress Enter to continue...")
+    raw_input("\nPress Enter to continue...")
 
     # roll random food
     for ranking in rankings:
@@ -62,4 +62,4 @@ with open(csv_file_name, 'r') as csvfile:
         writer.writerows(new_rows)
         print("The odds for {} are decreased".format(selected_food))
 
-    input("\nPress Enter to exit...")
+    raw_input("\nPress Enter to exit...")
